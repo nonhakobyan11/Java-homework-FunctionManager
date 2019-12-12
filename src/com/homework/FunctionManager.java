@@ -10,4 +10,13 @@ public class FunctionManager {
     static double mul(double a, double b){
         return a * b;
     }
+
+    // Problem 3
+    static void printFirstIsGreaterThenSecond(float a, float b) {
+        if (a > b) {
+            System.out.println("Yes.");
+        } else {
+            System.out.println("No.");
+        }
+    }
 }
