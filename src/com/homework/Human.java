@@ -23,7 +23,7 @@ public class Human {
         this.lastName = lastName;
     }
 
-    public int getBirthYearYear(){
+    public int getBirthYear(){
         return birthYear;
     }
 
@@ -46,6 +46,10 @@ public class Human {
         human.setGender(gender);
         human.setBirthYear(birthYear);
         return human;
+    }
+
+    public void printHumanInfo() {
+        System.out.println("Name: " + this.getFirstName() + " " + "Surname: " + this.getLastName() + " " + "Gender: " + this.getGender() + " " +  "Birth year: " + this.getBirthYear());
     }
 
 }

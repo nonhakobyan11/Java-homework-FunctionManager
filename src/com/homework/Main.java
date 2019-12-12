@@ -44,6 +44,10 @@ public class Main {
         float[] numbersFloat = {74.1F, 56.29F, 147.25F, 10.1F, 114.3F};
         System.out.println("Index of minimum element is: " + f.minIndex(numbersFloat));
 
+        //Problem 11
+        Human humans[] = {human1, human2, human3};
+        System.out.println("Sorted array is: " );
+        f.getSortedHumansByAscending(humans);
 
     }
 }

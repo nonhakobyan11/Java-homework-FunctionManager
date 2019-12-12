@@ -82,4 +82,22 @@ public class FunctionManager {
         }
         return indexOfMinEl;
     }
+
+    // Problem 11
+    public static void getSortedHumansByAscending(Human[] humans){
+        // bubble sort algorithm
+        Human t;
+        for(int i = humans.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (humans[j].birthYear > humans[j + 1].birthYear) {
+                    t = humans[j];
+                    humans[j] = humans[j + 1];
+                    humans[j + 1] = t;
+                }
+            }
+        }
+        for (int i = 0; i < humans.length; i++) {
+            humans[i].printHumanInfo();
+        }
+    }
 }
