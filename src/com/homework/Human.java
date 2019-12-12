@@ -1,9 +1,9 @@
 package com.homework;
 
 public class Human {
-    private String firstName;
-    private String lastName;
-    private int birthYear;
+    public String firstName;
+    public String lastName;
+    public int birthYear;
     public char gender;
 
 
@@ -39,11 +39,13 @@ public class Human {
         this.gender = gender;
     }
 
-    public static void maleOrFemale(char gender){
-        if(gender == 'M'){
-            System.out.println("Yes");
-        }else {
-            System.out.println("No");
-        }
+    public static Human constructor(String firstName, String lastName, int birthYear, char gender) {
+        Human human = new Human();
+        human.setFirstName(firstName);
+        human.setLastName(lastName);
+        human.setGender(gender);
+        human.setBirthYear(birthYear);
+        return human;
     }
+
 }

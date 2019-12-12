@@ -26,6 +26,23 @@ public class FunctionManager {
         System.out.println(max);
     }
 
+    // Problem 5
+    public static void maleOrFemale(char gender){
+        if(gender == 'M'){
+            System.out.println("Yes");
+        }else {
+            System.out.println("No");
+        }
+    }
+
+    // Problem 6
+    public static String returnOldestLastName(Human human1, Human human2, Human human3) {
+        String oldestLastName = human1.birthYear < human2.birthYear ? (human1.birthYear < human3.birthYear ? human1.lastName : human3.lastName) : (human2.birthYear < human3.birthYear ? human2.lastName: human3.lastName);
+        return oldestLastName;
+    }
+
+
+
     // Problem 9
     static int maxElement(int[] numbers){
         if (numbers == null || numbers.length == 0){

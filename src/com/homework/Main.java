@@ -6,6 +6,7 @@ public class Main {
         FunctionManager f = new FunctionManager();
         Human h1 = new Human();
 
+
         //Problem 1
         System.out.println("Sum of two int: " + f.sum(3, 5));
         //Problem 2
@@ -20,7 +21,17 @@ public class Main {
         //Problem 5
         h1.setGender('M');
         System.out.print("Is Male? ");
-        h1.maleOrFemale(h1.gender);
+        f.maleOrFemale(h1.gender);
+
+        //Problem 6
+        Human human1 = Human.constructor("Karen", "Vardanyan", 1999, 'M');
+        Human human2 = Human.constructor("Anahit", "Sahakyan", 2000, 'F');
+        Human human3 = Human.constructor("Karine", "Barseghyan", 1997, 'F');
+        System.out.println("The last name of oldest human is: " + f.returnOldestLastName(human1, human2, human3));
+
+        //Problem 7
+
+
 
         //Problem 9
         int[] numbersInt = {84, 15, 41, 17, 111, 25, 60, 12, 0};
