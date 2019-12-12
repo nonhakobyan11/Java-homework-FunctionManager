@@ -41,7 +41,19 @@ public class FunctionManager {
         return oldestLastName;
     }
 
+    // Problem 7
+    public static String returnFirstNames(Human human1, Human human2) {
+        return human1.firstName + ", " + human2.firstName;
+    }
 
+    // Problem 8
+    public static void printHumanDetail(boolean b, Human human){
+        if(b){
+            System.out.println(human.getFirstName());
+        } else {
+            System.out.println(human.getLastName());
+        }
+    }
 
     // Problem 9
     static int maxElement(int[] numbers){

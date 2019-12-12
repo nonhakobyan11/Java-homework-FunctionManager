@@ -30,8 +30,11 @@ public class Main {
         System.out.println("The last name of oldest human is: " + f.returnOldestLastName(human1, human2, human3));
 
         //Problem 7
+        System.out.println("The first names are: " + f.returnFirstNames(human1, human2));
 
-
+        //Problem 8
+        System.out.print("Problem 8 output is: " );
+        f.printHumanDetail(false, human3);
 
         //Problem 9
         int[] numbersInt = {84, 15, 41, 17, 111, 25, 60, 12, 0};
@@ -40,5 +43,7 @@ public class Main {
         //Problem 10
         float[] numbersFloat = {74.1F, 56.29F, 147.25F, 10.1F, 114.3F};
         System.out.println("Index of minimum element is: " + f.minIndex(numbersFloat));
+
+
     }
 }
