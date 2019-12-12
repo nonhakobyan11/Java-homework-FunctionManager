@@ -12,11 +12,17 @@ public class FunctionManager {
     }
 
     // Problem 3
-    static void printFirstIsGreaterThenSecond(float a, float b) {
+    static void printFirstIsGreaterThanSecond(float a, float b) {
         if (a > b) {
             System.out.println("Yes.");
         } else {
             System.out.println("No.");
         }
+    }
+
+    // Problem 4
+    static void printGreatestNumber(long a, long b, long c){
+        long max = a > b  ? (a >  c ? a : c) : (b > c ? b : c);
+        System.out.println(max);
     }
 }

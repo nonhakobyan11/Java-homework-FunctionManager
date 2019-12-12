@@ -7,6 +7,8 @@ public class Main {
         System.out.println("Sum of two int: " + f.sum(3, 5));
         System.out.println("Multiply of two double: " + f.mul(3, 5));
         System.out.print("Is a greater than b? ");
-        f.printFirstIsGreaterThenSecond(3.5F, 5.4F);
+        f.printFirstIsGreaterThanSecond(3.5F, 5.4F);
+        System.out.print("Which number is greater? ");
+        f.printGreatestNumber(129L, -140L, 155L);
     }
 }
