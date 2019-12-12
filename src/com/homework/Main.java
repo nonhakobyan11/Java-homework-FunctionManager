@@ -10,5 +10,11 @@ public class Main {
         f.printFirstIsGreaterThanSecond(3.5F, 5.4F);
         System.out.print("Which number is greater? ");
         f.printGreatestNumber(129L, -140L, 155L);
+
+        int[] numbersInt = {84, 15, 41, 17, 111, 25, 60, 12, 0};
+        System.out.println("Maximum element is: " + f.maxElement(numbersInt));
+
+        float[] numbersFloat = {74.1F, 56.29F, 147.25F, 10.1F, 114.3F};
+        System.out.println("Index of minimum element is: " + f.minIndex(numbersFloat));
     }
 }
